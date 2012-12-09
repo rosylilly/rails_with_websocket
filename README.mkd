@@ -1,0 +1,24 @@
+# Rails with WebSocket
+
+> わざわざ Rails と WebSocket サーバーを別で立てて foreman で管理するとかめんどくさすぎて死んでしまいそう。
+
+というような目的でやってみた。
+
+動かし方は
+
+```
+$ bundle install
+$ thin start
+$ open http://localhost:3000/
+```
+
+で OK。
+
+## 依存 Gem
+
+- rails 3.2.9
+- websocket-rack 0.4.0
+
+## 検証した Ruby
+
+MRI version 2.0.0-preview2
